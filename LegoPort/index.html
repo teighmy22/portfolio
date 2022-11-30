@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <body>
+    <!-- Hero -->
+    <section class="nav-tabs" id="hero">
+      <h1>Welcome</h1>
+      <img src="legomanwave.png.png" alt="" class="imgbehind">
+      <h3>Hi, I'm Tucker! Let me show you who I am and the work that I've done.</h3>
+      <div id="navbar" class="nav-tabs-container">
+        <a class="nav-tab" href="#hero">Intro</a>
+        <a class="nav-tab" href="#tab-es6">About</a>
+        <a class="nav-tab" href="#tab-flexbox">Work</a>
+        <a class="nav-tab" href="#tab-react">Contact</a>
+
+        <span class="nav-tab-slider"></span>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="slide" id="tab-es6">
+        <h1>About</h1>
+      </section>
+
+      <div class="aboutcontent">
+        <div class="about-info">
+          <div class="about-intro">
+            <h1>Tucker Eighmy</h1>
+            <h2>/ā mee/</h2>
+            <h4>I'm a senior at Lehigh Universtiy who is passionate about all forms of design.</h4>
+            <p>My design career started with a huge box of LEGOs that was passed down to me from my uncle. I would spend
+              hours in my room puting togeather these little plastic peices. Since then I have explored many forms of
+              deisgn and one thing always comes back. Taking all the parts of the design and figuring out a unique way
+              of putting them back togeather.</p>
+          </div>
+          <div class="about-img">
+            <img src="legomanwave.png.png" alt="" height="500px">
+          </div>
+          
+       
+          <div class="skills" >
+            <h4>Skills:</h4>
+            <p>Thinking outside the box, working with others, orgainization, project managment</p>
+
+          </div>
+          <div class="courses" >
+            <h4>Related Coursework:</h4>
+            <p>Web Design (I & II), Graphic Design (I, II, III), Web Design Assistant Teacher, Architecture Studio </p>
+          </div>
+          <div class="programs" >
+            <h4>Programs:</h4>
+            <p>HTML, CSS, Javascript, Figma, Rhino 7, Webflow, Wordpress, Photoshop, Illustrator (also love pen and paper!)</p>
+          </div>
+          <div class="hobbies" >
+            <h4>Hobbies:</h4>
+            <p>Skiing, Golf, Music Production (over 120,000 streams), Woodshop, Cooking (just learning)</p>
+          </div>
+        </div>
+      </div>
+    
+
+      <section class="slide" id="tab-flexbox">
+        <h1>Work</h1>
+        <h3>something about flexbox</h3>
+
+
+
+
+      </section>
+
+      <div class="menu">
+        <!-- title -->
+        <div class="title">
+
+          <h3>Check out my favorite design projects during my time at Lehigh.</h3>
+          <div class="underline"></div>
+        </div>
+        <!-- filter buttons -->
+        <div class="btn-container">
+          <!-- <button type="button" class="filter-btn" data-id="all">all</button>
+                  <button type="button" class="filter-btn" data-id="breakfast">
+                    breakfast
+                  </button>
+                  <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+                  <button type="button" class="filter-btn" data-id="shakes">
+                    shakes
+                  </button> -->
+        </div>
+        <!-- menu items -->
+        <div class="section-center">
+          <!-- single item -->
+          <article class="menu-item">
+            <img src="truthintro2.png" alt="menu item" class="photo" />
+            <div class="item-info">
+              <header>
+                <h4>buttermilk pancakes</h4>
+                <h4 class="price">$15</h4>
+              </header>
+              <p class="item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+                laboriosam excepturi! Quo, officia.
+              </p>
+            </div>
+          </article>
+          <!-- end of single item -->
+          <!-- single item -->
+          <article class="menu-item">
+            <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+            <div class="item-info">
+              <header>
+                <h4>buttermilk pancakes</h4>
+                <h4 class="price">$15</h4>
+              </header>
+              <p class="item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+                laboriosam excepturi! Quo, officia.
+              </p>
+            </div>
+          </article>
+          <!-- end of single item -->
+          <!-- single item -->
+          <article class="menu-item">
+            <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+            <div class="item-info">
+              <header>
+                <h4>buttermilk pancakes</h4>
+                <h4 class="price">$15</h4>
+              </header>
+              <p class="item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+                laboriosam excepturi! Quo, officia.
+              </p>
+            </div>
+          </article>
+          <!-- end of single item -->
+        </div>
+      </div>
+
+
+      </ul>
+      <section class="slide" id="tab-react">
+        <h1>Contact</h1>
+        <h3>something about react</h3>
+      </section>
+
+    </main>
+
+    <script>
+      window.onscroll = function () {
+        myFunction()
+      };
+      const navbar = document.getElementById("navbar");
+      const sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+
+      // Active navigation element
+      const links = document.querySelectorAll('.nav-tab');
+      const sections = document.querySelectorAll('section');
+
+      function changeLinkState() {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        links.forEach((link) => link.classList.remove('nav-tab-slider'));
+        links[index].classList.add('nav-tab-slider');
+      }
+
+      changeLinkState();
+      window.addEventListener('scroll', changeLinkState);
+
+
+
+
+      const menu = [{
+          id: 1,
+
+          title: "Free Hand",
+          category: "Branding",
+
+          img: "truthintro2.png",
+          desc: `An inovative cupholder for your golf bag. `,
+          desc2: `Branding, Product, Web`,
+
+        },
+        {
+          id: 2,
+          title: "Braille Calendar",
+          category: "Graphic",
+
+          img: "truthintro2.png",
+          desc: `How can you think differently about time?`,
+          desc2: `Graphic`,
+        },
+        {
+          id: 3,
+          title: "Libre",
+          category: "Branding",
+
+          img: "truthintro2.png",
+          desc: `A new age ski company with new age designs.`,
+          desc2: `Branding, Web`
+        },
+        {
+          id: 4,
+          title: "Whitney Bienial",
+          category: "Graphic",
+
+          img: "biennial.png",
+          desc: `Redesigning a classic with only two colors.`,
+          desc2: `Graphic Design`,
+        },
+        {
+          id: 5,
+          title: "Truth App",
+          category: "Branding",
+
+          img: "truthintro2.png",
+          desc: `An app that helps young people quit nicotine. `,
+        },
+        {
+          id: 6,
+          title: "Electric Polar Bear",
+          category: "Product",
+
+          img: "truthintro2.png",
+          desc: `A website redesign for an EDM group on the up and up.`,
+        },
+        {
+          id: 7,
+          title: "Truth App",
+          category: "Web",
+
+          img: "truthintro2.png",
+          desc: `An app that helps young people quit nicotine `,
+        },
+        {
+          id: 9,
+          title: "Truth App",
+          category: "Web",
+
+          img: "truthintro2.png",
+          desc: `An app that helps young people quit nicotine `,
+        },
+        {
+          id: 10,
+          title: "Truth App",
+          category: "Web",
+
+          img: "truthintro2.png",
+          desc: `An app that helps young people quit nicotine `,
+        },
+
+      ];
+      // get parent element
+      const sectionCenter = document.querySelector(".section-center");
+      const btnContainer = document.querySelector(".btn-container");
+      // display all items when page loads
+      window.addEventListener("DOMContentLoaded", function () {
+        diplayMenuItems(menu);
+        displayMenuButtons();
+      });
+
+      function diplayMenuItems(menuItems) {
+        let displayMenu = menuItems.map(function (item) {
+          // console.log(item);
+
+          return `<a href="#" class="worklink"><article class="menu-item">
+          <img src=${item.img} alt=${item.title} class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>${item.title}</h4>
+              
+            </header>
+            <p class="item-text">
+              ${item.desc}
+            </p>
+        </header>
+            <p class="item-cat">
+              ${item.desc2}
+            </p>
+            
+          </div>
+        </article>
+        </a>`;
+        });
+        displayMenu = displayMenu.join("");
+        // console.log(displayMenu);
+
+        sectionCenter.innerHTML = displayMenu;
+      }
+
+      function displayMenuButtons() {
+        const categories = menu.reduce(
+          function (values, item) {
+            if (!values.includes(item.category)) {
+              values.push(item.category);
+            }
+            return values;
+          },
+          ["all"]
+        );
+        const categoryBtns = categories
+          .map(function (category) {
+            return `<button type="button" class="filter-btn" data-id=${category}>
+          ${category}
+        </button>`;
+          })
+          .join("");
+
+        btnContainer.innerHTML = categoryBtns;
+        const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+        console.log(filterBtns);
+
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            // console.log(e.currentTarget.dataset);
+            const category = e.currentTarget.dataset.id;
+            const menuCategory = menu.filter(function (menuItem) {
+              // console.log(menuItem.category);
+              if (menuItem.category === category) {
+                return menuItem;
+              }
+            });
+            if (category === "all") {
+              diplayMenuItems(menu);
+            } else {
+              diplayMenuItems(menuCategory);
+            }
+          });
+        });
+      }
+
+      AOS.init();
+    </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+
+</html>
