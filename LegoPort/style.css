@@ -193,7 +193,6 @@ a {
 .nav-tabs .imgbehind,
 .slide .imgbehind {
   height: 300px;
-  padding-left: 150px;
   float: inline-end;
 }
 
@@ -244,6 +243,7 @@ a {
   background: rgba(236, 98, 0, 0.8);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  border-radius: 25px;
 }
 
 .nav-tab-slider {
@@ -268,7 +268,7 @@ a {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 5% 0px;
   grid-auto-flow: row;
       grid-template-areas: "about-intro about-intro about-img about-img" "about-intro about-intro about-img about-img" "skills skills programs programs" "courses courses hobbies hobbies";
   max-width: 75vw;
@@ -605,6 +605,11 @@ h4 {
   .nav-tabs h3,
   .slide h3 {
     font-size: 1.5rem;
+  }
+  .nav-tabs .imgbehind,
+  .slide .imgbehind {
+    padding-left: 150px;
+    height: 600px;
   }
   .nav-tab {
     font-size: 1rem;

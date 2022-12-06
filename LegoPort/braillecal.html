@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projectstyle.css">
+
+</head>
+
+<body>
+    
+
+    
+    
+    <div class="project-cover">
+       
+        <div class="intro-pic">
+            <div class="project-nav"> 
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="#">Next Project</a>
+                <a class="nav-item" href="#">Contact</a>
+               
+            </div>
+           
+        </div>
+        <div class="intro-name">
+            <h1>Braille Callendar</h1>
+            <p style="color: white;">How can we think differntly about time?</p>
+            <p style="color: #d9d9d9; font-weight: 200;">Graphic Design</p> <br>
+            <a class="button" href="#">View Gallery</a>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <div class="top-button">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><p>&#8593;</p></button>
+    </div>
+        <div class="text-one">
+            <h2>About the Project:</h2> <br>
+            <p>For this projet we had to create an abstract graphic system tht builds on the rhythm of a unique representation of time.</p>
+        </div>
+        <div class="pic-one">
+            <img class="project-img" src="img/Braille-holding.png" alt="">
+
+        </div>
+        <div class="pic-two">
+            <img class="project-img" src="img/process-one.png" alt="">
+            <h5>Final print in the laser cutter</h5>
+        </div>
+        <div class="text-two">
+            <p>I found inspiration from a font I found in research called <span><a href="https://brailleneue.com/"  style="color: green">Braille Neue</a></span>. This accessible font is able to match the braille up with letters in the alphabet making it possible for the visually impaired to understand the text as well. The challenge was how I could get the font to work if touched.</p>
+        </div>
+        <div class="text-three">
+            <h2>About the Project:</h2> <br>
+            <p>For this projet we had to create an abstract graphic system tht builds on the rhythm of a unique representation of time.</p>
+        </div>
+        <div class="pic-three">
+            <img class="project-img" src="img/bc-process-two.png" alt="">
+            <h5 style="text-align: right;">Laser printer setup</h5>
+        </div>
+        <div class="pic-four">
+            <img class="project-img" src="img/Braille-holding.png" alt="">
+        </div>
+        <div class="text-four">
+            <h2>About the Project:</h2> <br>
+            <p>For this projet we had to create an abstract graphic system tht builds on the rhythm of a unique representation of time.</p>
+        </div>
+      </div>
+
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+</body>
+
+</html>

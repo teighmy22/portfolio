@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0%;
+    font-family: "poppins", sans-serif;
+
+}
+
+.project-img {
+    max-width: 80%;
+    height: auto;
+}
+
+.button {
+    border: 2px white solid;
+    border-radius: 25px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    transition: .2s ease-in-out;
+}
+
+a:hover {
+    color: #d9d9d9
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 300;
+    color: white;
+    line-height: 96%;
+
+}
+
+h2 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 300;
+}
+
+h5 {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.project-nav {
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+
+}
+
+.nav-item {
+    font-size: 2rem;
+}
+
+.project-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    
+}
+
+.intro-pic {
+    grid-area: 1 / 1 / 2 / 5;
+    background-image: url(img/DES_153_Brand_Photos_MG_0805\ 2.png);
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-name {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-top: 10%;
+    padding-left: 10%;
+    background-color: transparent !important;
+    z-index: 0;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "text-one text-one pic-one pic-one"
+        "pic-two pic-two text-two text-two"
+        "text-three text-three pic-three pic-three"
+        "pic-four pic-four text-four text-four";
+
+    padding-top: 10%;
+    background-color: black;
+    place-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.text-one {
+    grid-area: text-one;
+    padding: 10%;
+    max-width: 70%;
+
+
+}
+
+.pic-one {
+    grid-area: pic-one;
+    
+    place-items: center;
+}
+
+.pic-two {
+    grid-area: pic-two;
+}
+
+.text-two {
+    grid-area: text-two;
+    padding: 10%;
+}
+
+.text-three {
+    grid-area: text-three;
+    padding: 10%;
+}
+
+.pic-three {
+    grid-area: pic-three;
+}
+
+.pic-four {
+    grid-area: pic-four;
+}
+
+.text-four {
+    grid-area: text-four;
+    padding: 10%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 3px white solid;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    border: 3px #d9d9d9 solid;
+    color: #d9d9d9;
+}
+
+
+
+@media only screen and (max-width: 1410px) {
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-cover {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        
+    }
+    
+    .intro-pic {
+        grid-area: 1 / 1 / 2 / 5;
+        background-image: url(img/DES_153_Brand_Photos_MG_0805\ 2.png);
+        height: 55vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .intro-name {
+        grid-area: 1 / 1 / 2 / 3;
+        margin-top: 50%;
+        padding-left: 10%;
+        background-color: transparent !important;
+        z-index: 0;
+    }
+    
+
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "text-one text-one"
+            "pic-one pic-one"
+            "text-two text-two"
+            "pic-two pic-two"
+            "text-three text-three"
+            "pic-three pic-three"
+            "text-four text-four"
+            "pic-four pic-four";
+            
+        padding-top: 10%;
+        background-color: black;
+        place-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    
+    .text-one {
+        grid-area: text-one;
+        
+        max-width: 80%;
+    
+    
+    }
+    
+    .pic-one {
+        grid-area: pic-one;
+        padding-left: 20%;
+        place-items: center;
+        
+    }
+    
+    .pic-two {
+        grid-area: pic-two;
+    }
+    
+    .text-two {
+        grid-area: text-two;
+        padding: 10%;
+    }
+    
+    .text-three {
+        grid-area: text-three;
+        padding: 10%;
+    }
+    
+    .pic-three {
+        grid-area: pic-three;
+    }
+    
+    .pic-four {
+        grid-area: pic-four;
+    }
+    
+    .text-four {
+        grid-area: text-four;
+        padding: 10%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
