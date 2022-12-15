@@ -167,7 +167,8 @@ a {
           align-items: center;
   height: 100vh;
   position: relative;
-  background: #153043;
+  background: #22506f;
+  background: radial-gradient(circle, #22506f 0%, #153043 47%);
   text-align: center;
   padding: 0 2em;
 }
@@ -359,6 +360,7 @@ p {
   color: #F6FAF9;
   font-weight: 200;
   padding: 2%;
+  line-height: 1.5;
 }
 
 h4 {
@@ -377,7 +379,7 @@ h4 {
     grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-        grid-template-areas: "about-intro about-intro" "about-intro about-intro" "skills skills" "programs programs" "courses courses"  "hobbies hobbies";
+        grid-template-areas: "about-intro about-intro" "about-intro about-intro" "skills skills" "programs programs" "courses courses" "hobbies hobbies";
     max-width: 75vw;
   }
   .about-img {

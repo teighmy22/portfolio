@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My UX/UI Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .portfolio-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+    .portfolio-item img {
+      max-width: 100%;
+    }
+    .portfolio-item h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .portfolio-item p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>My UX/UI Portfolio</h1>
+  <div id="portfolio">
+    <!-- Portfolio items will be added here by JavaScript -->
+  </div>
+  <script>
+    const portfolioData = [
+      {
+        imgUrl: "https://via.placeholder.com/150",
+        title: "Project 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        imgUrl: "https://via.placeholder.com/150",
+        title: "Project 2",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        imgUrl: "https://via.placeholder.com/150",
+        title: "Project 3",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ];
+
+    // Get the "portfolio" div where the portfolio items will be added
+    const portfolioEl = document.getElementById("portfolio");
+
+    // Loop through the portfolio data and create a new portfolio item for each object
+    for (const item of portfolioData) {
+      // Create a new div element for the portfolio item
+      const portfolioItemEl = document.createElement("div");
+      portfolioItemEl.className = "portfolio-item";
+
+      // Create the image element and set its src attribute to the imgUrl from the data
+      const imgEl = document.createElement("img");
+      imgEl.src = item.imgUrl;
+
+      // Create the title element and set its text to the title from the data
+      const titleEl = document.createElement("h3");
+      titleEl.textContent = item.title;
+
+      // Create the description element and set its text to the description from the data
+      const descriptionEl = document.createElement("p");
+      descriptionEl.textContent = item.description;
+
+      // Add the image, title, and description elements to the portfolio item element
+      portfolioItemEl.appendChild(imgEl);
+      portfolioItemEl.appendChild(titleEl);
+      portfolioItemEl.appendChild(descriptionEl);
+
+      // Add the portfolio item element to the "portfolio" element
+      portfolioEl.appendChild(portfolioItemEl);
+    }
+  </script>
+
+</body>
+
+</html>
